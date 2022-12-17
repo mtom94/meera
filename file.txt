@@ -1,0 +1,38 @@
+#exchange induvidual characters
+def change_str(str):
+    return str[-1:]+str[1:-1]+str[:1]
+string=str(input("Enter any string"))
+print(change_str(string))
+#BIGGEST OF 3 NUMBERS USING MAX()
+n=int(input("enter the first number:"))
+n1=int(input("enter the second number:"))
+n2=int(input("enter the third number:"))
+r=max(n,n1,n2)
+print(r,"is greater")
+#LIST OF COLORS BY USER
+values=input("enter the list f colors")
+mylist=values.split(",")
+print(mylist)
+#PATTERN
+num=int(input("enter the value of n:"))
+var=str(n)
+var1=var+var
+var2=var+var+var
+find=n+int(var1)+int(var2)
+print(find)
+#ODD OR EVEN
+n=int(input("enter a number:"))
+if (n%2)==0:
+    print(n,"is even".format(n))
+else:
+    print(n,"is odd".format(n))
+#POSITIVE OR NEGATIVE
+n=int(input("enter a number:"))
+if n>0:
+    print(n,"is positive")
+elif n<0:
+    print(n, "is negative")
+else:
+    print(n, "is invalid")
+
+

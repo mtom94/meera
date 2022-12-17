@@ -1,0 +1,57 @@
+#FACTORIAL OF A NUMBER
+n=int(input("enter the number:"))
+fact=1
+while(n>0):
+    fact=fact*n
+    n=n-1
+    print(fact)
+#REVERSE OF A NUMBER
+n=int(input("enter the number:"))
+rev=0
+while(n>0):
+    val=n%10
+    rev=rev*10+val
+    n=n//10
+    print(rev)
+#PALINDROME OR NOT
+n=int(input("enter the number:"))
+temp=n
+sum=0
+while(n>0):
+    val=n%10
+    sum=sum*10+val
+    n=n/10
+if(temp==sum):
+    print("palindrome")
+else:
+    print("Not palindrome")
+#ARMSTRONG OR NOT
+n=int(input("enter the number:"))
+m=n
+s=0
+while(n>0):
+    r=n%10
+    s=s+r*r*r
+    n=n/10
+    if(s==m):
+        print("Armstrong")
+    else:
+        print("Not Armstrong")
+#FIBONACCI SERIES
+n=int(input("enter the number:"))
+a=0
+b=1
+c=a+b
+print(a)
+print(b)
+while c<=n:
+    print(c)
+    a=b
+    b=c
+    c=a+b
+    print("The fibonacci series is:")
+
+
+
+
+
